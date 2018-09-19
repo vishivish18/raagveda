@@ -1,20 +1,290 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<style type="text/css">
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
 
+.home-box {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bg {
+  /* The image used */
+  /*background-image: url("../assets/images/bck2.jpg");*/
+  height: 93vh;
+  /*opacity: 0.5;*/
+  background: linear-gradient(rgba(97, 98, 116, .7), rgba(97, 98, 116, .7)), url("../assets/images/bck2.jpg");
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.band-text {
+  font-family: 'Indie Flower', cursive;
+}
+.about-text{
+  padding: 20px;
+  text-align: justify;
+ font-family: 'Indie Flower', cursive;
+ font-size: 32px; 
+}
+.band-name {
+  position: absolute;
+  font-size: 82px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
+<div class="home-box" style="text-align:center">
+  <div class="bg"></div>
+  <div class="band-name band-text">The Tender Mango Project</div>
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top band-text">
+  <a class="navbar-brand" href="#">The Tender Mango Project</a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#about-section">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Covers</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">OST</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contact</a>
+    </li>
+  </ul>
+</nav>
+<div id="about-section">
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="about-text">
+        <h3 style="text-align: center; font-size: 52px;">About Us</h3>
+        HI There, Welcome to our channel, The Tender Mango Project! We are a bunch of working professionals and musicians bonded by our love of music. We are the misfits obssessed with the love of music above all. We travel and party together while making some beautiful music and life time memories. We love to experiment and will keep sharing and creating music that touches souls. If you like our efforts please like our videos and subscribe to our channel. It will encourage us to keep creating these videos.
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="content">
+      <div class="grid">
+        <a class="grid__item" href="#preview-1">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img class="box__img" src="../assets/images/band/jimmon.jpg" alt="Some image" />
+            <h3 class="box__title"><span class="box__title-inner" data-hover="Jimmon">Jimmon</span></h3>
+            <!--             <h4 class="box__text"><span class="box__text-inner">Beast</span></h4>
+ -->
+            <div class="box__deco">&#10014;</div>
+            <!-- <p class="box__content">"Sometimes we go surfing when it's stormy weather"</p> -->
+          </div>
+        </a>
+        <a class="grid__item" href="#preview-2">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img class="box__img" src="../assets/images/band/nikhil.jpg" alt="Some image" />
+            <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" data-hover="Nikhil">Nikhil</span></h3>
+            <!-- <h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Rain</span></h4>
+            <div class="box__deco box__deco--top">&#10115;</div> -->
+          </div>
+        </a>
+        <a class="grid__item" href="#preview-3">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img class="box__img" src="../assets/images/band/sagar.jpg" alt="Some image" />
+            <h3 class="box__title"><span class="box__title-inner" data-hover="Sagar">Sagar</span></h3>
+            <!-- <h4 class="box__text box__text--topcloser"><span class="box__text-inner">Green</span></h4> -->
+            <div class="box__deco">&#10032;</div>
+          </div>
+        </a>
+        <a class="grid__item" href="#preview-4">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img class="box__img" src="../assets/images/band/yogesh.jpg" alt="Some image" />
+            <h3 class="box__title"><span class="box__title-inner" data-hover="yogesh">yogesh</span></h3>
+            <h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3">Yogi</span></h4>
+          </div>
+        </a>
+        <a class="grid__item" href="#preview-5">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img class="box__img" src="../assets/images/band/punit.jpg" alt="Some image" />
+            <h3 class="box__title"><span class="box__title-inner" data-hover="Punit">Punit</span></h3>
+            <!-- <h4 class="box__text box__text--bottomcloser"><span class="box__text-inner">Breed</span></h4> -->
+          </div>
+        </a>
+        <a class="grid__item" href="#preview-6">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img class="box__img" src="../assets/images/band/nikita.jpg" alt="Some image" />
+            <h3 class="box__title"><span class="box__title-inner" data-hover="Nikita">Nikita</span></h3>
+            <!-- <h4 class="box__text"><span class="box__text-inner">Fast</span></h4>
+            <p class="box__content">"Love stronger, stranger! Love stronger."</p> -->
+          </div>
+        </a>
+        <a class="grid__item" href="#preview-7">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img class="box__img" src="../assets/images/band/vishal.jpg" alt="Some image" />
+            <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" data-hover="Vishal">Vishal</span></h3>
+            <!-- <h4 class="box__text box__title--bottom"><span class="box__text-inner box__text-inner--rotated1">FREE</span></h4> -->
+          </div>
+        </a>
+        <a class="grid__item" href="#preview-8">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img class="box__img" src="../assets/images/band/cherry.jpg" alt="Some image" />
+            <h3 class="box__title"><span class="box__title-inner" data-hover="Cherry">Cherry</span></h3>
+            <!-- <h4 class="box__text box__text--bottom"><span class="box__text-inner">Bust</span></h4>
+            <div class="box__deco">&#10108;</div> -->
+          </div>
+        </a>
+        <a class="grid__item" href="#preview-9">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img class="box__img" src="../assets/images/band/amalson.jpg" alt="Some image" />
+            <h3 class="box__title"><span class="box__title-inner" data-hover="Amalson">Amalson</span></h3>
+            <!-- <h4 class="box__text box__text--bottom"><span class="box__text-inner">Zack</span></h4> -->
+          </div>
+        </a>
+        <a class="grid__item" href="#preview-10">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img class="box__img" src="../assets/images/band/bhargavi.jpg" alt="Some image" />
+            <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner" data-hover="Bhargavi">Bhargavi</span></h3>
+            <!-- <h4 class="box__text box__title--bottom"><span class="box__text-inner box__text-inner--rotated1">Life</span></h4> -->
+          </div>
+        </a>
+        <!-- <a class="grid__item" href="#preview-11">
+          <div class="box">
+            <div class="box__shadow"></div>
+            <img class="box__img" src="../assets/img/12.jpg" alt="Some image" />
+            <h3 class="box__title box__title--straight box__title--left"><span class="box__title-inner" data-hover="Grit">Grit</span></h3>
+            <h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3">Mud</span></h4>
+            <div class="box__deco box__deco--top">&#10153;</div>
+          </div>
+        </a> -->
+      </div>
+    </div>
+    <div class="overlay">
+      <div class="overlay__reveal"></div>
+      <div class="overlay__item" id="preview-1">
+        <div class="box">
+          <div class="box__shadow"></div>
+          <img class="box__img box__img--original" src="../assets/img/original/1.jpg" alt="Some image" />
+          <h3 class="box__title"><span class="box__title-inner">Memo</span></h3>
+          <h4 class="box__text"><span class="box__text-inner">Beast</span></h4>
+          <div class="box__deco">&#10014;</div>
+        </div>
+        <p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+      </div>
+      <div class="overlay__item" id="preview-2">
+        <div class="box">
+          <div class="box__shadow"></div>
+          <img class="box__img box__img--original" src="../assets/img/original/2.jpg" alt="Some image" />
+          <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Gun</span></h3>
+          <h4 class="box__text box__text--bottom"><span class="box__text-inner box__text-inner--rotated1">Rain</span></h4>
+          <div class="box__deco box__deco--top">&#10115;</div>
+        </div>
+        <p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+      </div>
+      <div class="overlay__item" id="preview-3">
+        <div class="box">
+          <div class="box__shadow"></div>
+          <img class="box__img box__img--original" src="../assets/img/original/3.jpg" alt="Some image" />
+          <h3 class="box__title"><span class="box__title-inner">West</span></h3>
+          <h4 class="box__text box__text--topcloser"><span class="box__text-inner">Green</span></h4>
+          <div class="box__deco">&#10032;</div>
+        </div>
+        <p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+      </div>
+      <div class="overlay__item" id="preview-4">
+        <div class="box">
+          <div class="box__shadow"></div>
+          <img class="box__img box__img--original" src="../assets/img/original/5.jpg" alt="Some image" />
+          <h3 class="box__title"><span class="box__title-inner">Catch</span></h3>
+          <h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3">Fire</span></h4>
+        </div>
+        <p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+      </div>
+      <div class="overlay__item" id="preview-5">
+        <div class="box">
+          <div class="box__shadow"></div>
+          <img class="box__img box__img--original" src="../assets/img/original/6.jpg" alt="Some image" />
+          <h3 class="box__title"><span class="box__title-inner">Lim</span></h3>
+          <h4 class="box__text box__text--bottomcloser"><span class="box__text-inner">Breed</span></h4>
+        </div>
+        <p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+      </div>
+      <div class="overlay__item" id="preview-6">
+        <div class="box">
+          <div class="box__shadow"></div>
+          <img class="box__img box__img--original" src="../assets/img/original/7.jpg" alt="Some image" />
+          <h3 class="box__title"><span class="box__title-inner">Hard</span></h3>
+          <h4 class="box__text"><span class="box__text-inner">Fast</span></h4>
+        </div>
+        <p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+      </div>
+      <div class="overlay__item" id="preview-7">
+        <div class="box">
+          <div class="box__shadow"></div>
+          <img class="box__img box__img--original" src="../assets/img/original/8.jpg" alt="Some image" />
+          <h3 class="box__title box__title--straight box__title--bottom"><span class="box__title-inner">Red</span></h3>
+          <h4 class="box__text box__title--bottom"><span class="box__text-inner box__text-inner--rotated1">Life</span></h4>
+        </div>
+        <p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+      </div>
+      <div class="overlay__item" id="preview-8">
+        <div class="box">
+          <div class="box__shadow"></div>
+          <img class="box__img box__img--original" src="../assets/img/original/9.jpg" alt="Some image" />
+          <h3 class="box__title"><span class="box__title-inner">Jack</span></h3>
+          <h4 class="box__text box__text--bottom"><span class="box__text-inner">Bust</span></h4>
+          <div class="box__deco">&#10108;</div>
+        </div>
+        <p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+      </div>
+      <div class="overlay__item" id="preview-9">
+        <div class="box">
+          <div class="box__shadow"></div>
+          <img class="box__img box__img--original" src="../assets/img/original/10.jpg" alt="Some image" />
+          <h3 class="box__title"><span class="box__title-inner">Wild</span></h3>
+          <h4 class="box__text box__text--bottom"><span class="box__text-inner">Zack</span></h4>
+        </div>
+        <p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+      </div>
+      <div class="overlay__item" id="preview-10">
+        <div class="box">
+          <div class="box__shadow"></div>
+          <img class="box__img box__img--original" src="../assets/img/original/11.jpg" alt="Some image" />
+          <h3 class="box__title box__title--bottom"><span class="box__title-inner">Lost</span></h3>
+          <h4 class="box__text"><span class="box__text-inner box__text-inner--rotated2">Rust</span></h4>
+        </div>
+        <p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+      </div>
+      <div class="overlay__item" id="preview-11">
+        <div class="box">
+          <div class="box__shadow"></div>
+          <img class="box__img box__img--original" src="../assets/img/original/12.jpg" alt="Some image" />
+          <h3 class="box__title box__title--straight box__title--left"><span class="box__title-inner">Grit</span></h3>
+          <h4 class="box__text box__text--bottom box__text--right"><span class="box__text-inner box__text-inner--rotated3">Mud</span></h4>
+          <div class="box__deco box__deco--top">&#10153;</div>
+        </div>
+        <p class="overlay__content">It's time the tale were told of how you took a child and you made him old.</p>
+      </div>
+      <button class="overlay__close">
+        <svg class="icon icon--cross">
+          <use xlink:href="#icon-cross"></use>
+        </svg>
+      </button>
+    </div>
+  </main>
+</div>
